@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<title>About</title>
+<head>
+  <link rel="icon" href="https://i.pinimg.com/736x/93/fc/c0/93fcc0c0f7721aac085b5f076f6133e9.jpg" type="image/jpeg" />
+</head>
+<style>
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: url(https://i.pinimg.com/1200x/9c/12/fc/9c12fc630f20cb6d917e79cbafacd9e6.jpg) no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    h1 {
+      color: #000000;
+    }
+    button {
+      padding: 8px 16px;
+      background: #81c784;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      color: #fff;
+    }
+    button:hover {
+      background: #000000;
+    }
+</style>
+<section style="text-align: center; background: rgba(255,255,255,0.8); padding: 32px; border-radius: 8px; margin-top: 80px;">
+  <h1>Hi, Im Dan</h1>
+   <img 
+    src="file:///C:/Users/danie/Downloads/70F52957-43C4-440B-8C14-FAAC7290C3DB%20(4).jpg" 
+    alt="Profile Picture" 
+    style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover;"
+  > 
+  <h1>Who Am I?</h1>
+  <p>I am a 16 year old from Joburg, South Africa. In my free time I enjoy gyming, gaming and talking to my friends but that is not what you are here for... With this PAT I thought why not put my passion to design, building a website.</p>
+  <h1>Why Did I Choose A Website?</h1>
+  <p>The reason why I chose to build a website is because I have a passion for design and I have been studying code for a while and decided to put it to a good use</p>
+  <h1>How long have I been taking design for?</h1>
+  <p>I have been taking design for 2-3 years now</p>
+</section>
+<header style="width: 100%; background: rgba(255,255,255,0.8); padding: 16px 0; text-align: center; position: fixed; top: 0; left: 0;">
+  <nav>
+    <a href="index.html" style="margin: 0 16px; color: #000000; text-decoration: none; font-weight: bold;">Home</a>
+    <a href="posters.html" style="margin: 0 16px; color: #000000; text-decoration: none; font-weight: bold;">Posters</a>
+  </nav>
+</header>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const elements = document.querySelectorAll('h1, p');
+    elements.forEach(el => {
+      el.style.opacity = 0;
+      el.style.transition = "opacity 1.5s"; 
+    });
+    setTimeout(() => {
+      elements.forEach(el => {
+        el.style.opacity = 1;
+      });
+    }, 200);
+  });
+</script>
+

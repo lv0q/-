@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<title>Eco Consious Design Patterns</title>
+<head>
+  <link rel="icon" href="https://i.pinimg.com/736x/93/fc/c0/93fcc0c0f7721aac085b5f076f6133e9.jpg" type="image/jpeg" />
+</head>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: url(https://i.pinimg.com/1200x/9c/12/fc/9c12fc630f20cb6d917e79cbafacd9e6.jpg) no-repeat center center fixed;
+      background-size: cover;
+      color: #000000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    h1 {
+      color: #000000;
+    }
+    button {
+      padding: 8px 16px;
+      background: #81c784;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      color: #fff;
+    }
+    button:hover {
+      background: #000000;
+    }       
+  </style>
+  <section style="text-align: center; background: rgba(255,255,255,0.8); padding: 32px; border-radius: 8px; margin-top: 80px;">
+  <h1>DESIGN PAT FINAL</h1>
+    <p>Welcome to my fully built customly designed website for my design PAT final.</p>
+    <p>This includes 2-3 posters, an about my PAT section and more. You will find a QR code on each of my 
+    poster boards and a larger QR code for the final site :)</p>
+    <h6>Best to view on a laptop or in landscape on your phone! :)</h6>
+  </section>
+  <header style="width: 100%; background: rgba(255,255,255,0.8); padding: 16px 0; text-align: center; position: fixed; top: 0; left: 0;">
+    <nav>
+      <a href="about.html" style="margin: 0 16px; color: #000000; text-decoration: none; font-weight: bold;">About</a>
+      <a href="posters.html" style="margin: 0 16px; color: #000000; text-decoration: none; font-weight: bold;">Posters</a>
+    </nav>
+  </header>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const elements = document.querySelectorAll('h1, p');
+    elements.forEach(el => {
+      el.style.opacity = 0;
+      el.style.transition = "opacity 1.5s";
+    });
+    setTimeout(() => {
+      elements.forEach(el => {
+        el.style.opacity = 1;
+      });
+    }, 200);
+  });
+</script> 

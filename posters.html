@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="https://i.pinimg.com/736x/93/fc/c0/93fcc0c0f7721aac085b5f076f6133e9.jpg" type="image/jpeg" />
+  <meta charset="UTF-8">
+  <title>Eco Consious Design Patterns</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: url(https://i.pinimg.com/1200x/9c/12/fc/9c12fc630f20cb6d917e79cbafacd9e6.jpg) no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    h1 {
+      color: #000000;
+    }
+    button {
+      padding: 8px 16px;
+      background: #81c784;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      color: #fff;
+    }
+    button:hover {
+      background: #000000;
+    } 
+    .poster-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 40px;
+      margin: 40px 0;
+      background: rgba(255,255,255,0.8);
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      max-width: 800px;
+    }
+    .poster-images {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .poster-images img {
+      width: 180px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    }
+    .poster-text {
+      flex: 1;
+      font-size: 1.1em;
+      color: #222;
+    }
+  </style>
+</head>
+<body>
+  <header style="width: 100%; background: rgba(255,255,255,0.8); padding: 16px 0; text-align: center; position: fixed; top: 0; left: 0;">
+    <nav>
+      <a href="index.html" style="margin: 0 16px; color: #000000; text-decoration: none; font-weight: bold;">Home</a>
+      <a href="about.html" style="margin: 0 16px; color: #000000; text-decoration: none; font-weight: bold;">About</a>
+    </nav>
+  </header>
+  <div style="margin-top: 100px; margin-bottom: 80px;">
+    <div class="poster-container">
+      <div class="poster-images">
+        <img src="file:///C:/Users/danie/Downloads/Design%20Pat%20Term%20Two/Posters/Be%20The%20Star%20That%20Changes%20The%20World.png" alt="TIS Poster">
+      </div>
+      <div class="poster-text">
+        <h1>Be The Star That Changes The World</h1>
+        <p>I designed this poster to be cheerful and playful. Whilst still promoting a playful feeling and vibe.This poster features a star which is us and text around it. The poster is made to resembale that you can (even if you do the little things) be the change</p>
+      </div>
+    </div>
+    <div class="poster-container">
+      <div class="poster-images">
+        <img src="file:///C:/Users/danie/Downloads/Design%20Pat%20Term%20Two/Posters/There%20Is%20No%20Planet%20B.png" alt="BTS Poster">
+      </div>
+      <div class="poster-text">
+        <h1>There Is No Planet B</h1>
+        <p>This poster was designed to be simple and have a y2k vibe to it. It was made to be convoy the message for awareness about us not having a second earth. In a nutshell its saying if we don't be careful bad things will happen</p> 
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const elements = document.querySelectorAll('h1, p');
+    elements.forEach(el => {
+      el.style.opacity = 0;
+      el.style.transition = "opacity 1.5s";
+    });
+    setTimeout(() => {
+      elements.forEach(el => {
+        el.style.opacity = 1;
+      });
+    }, 200);
+  });
+</script> 
